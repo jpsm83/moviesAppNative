@@ -1,4 +1,4 @@
-interface Movie {
+export interface IMovie {
   id: number;
   title: string;
   adult: boolean;
@@ -15,7 +15,7 @@ interface Movie {
   vote_count: number;
 }
 
-interface TrendingMovie {
+export interface ITrendingMovie {
   searchTerm: string;
   movie_id: number;
   title: string;
@@ -23,7 +23,7 @@ interface TrendingMovie {
   poster_url: string;
 }
 
-interface MovieDetails {
+export interface IMovieDetails {
   adult: boolean;
   backdrop_path: string | null;
   belongs_to_collection: {
@@ -71,7 +71,7 @@ interface MovieDetails {
   vote_count: number;
 }
 
-interface TrendingCardProps {
+export interface ITrendingCardProps {
   movie: TrendingMovie;
   index: number;
 }
